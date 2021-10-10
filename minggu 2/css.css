@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* header*/
+#judul{
+    font-size: 30px;
+}
+
+header{
+    background-color: antiquewhite;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* nav bar*/
+nav{
+    margin:auto;
+    text-align: center;
+    width: 100%;
+}
+#navi{
+    list-style: none;
+    position: relative;
+    display: inline-table;
+    width: 100%;
+    background-color: rgb(204, 183, 155);
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.b{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+}
+.a{
+   float: left;
+   border: 1px black;
+   padding: 10px;
+   width: 32%;
+
+}
+.a:hover{
+    background-color: burlywood;
+}
+
+/* content*/
+.kotak{
+    display: flex;
+    height: auto;
+    width: auto;
+}
+/*main content*/
+#kotak1{
+    background-color: blanchedalmond;
+    height: auto;
+    width: 50%;
+    padding: 20px;
+}
+#kotakab{
+    background-color: blanchedalmond;
+    height: auto;
+    width: 100%;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    
+}
+#bio{
+    padding-bottom: 15px;
+    align-items: center;
+    justify-content: center;
+}
+td{
+    padding-left: 10px;
+}
+/* content berita*/
+#kotak2{
+    background-color: rgb(255, 244, 227);
+    height: auto;
+    width: 50%;
+    padding: 20px;   
+}
+#kotakne{
+    background-color: rgb(255, 244, 227);
+    height: auto;
+    width: 100%;
+    padding: 20px;
+}
+
+/*footer*/
+footer{
+    background-color: black;
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
