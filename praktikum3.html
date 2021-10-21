@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="main.css" rel="stylesheet" type="text/css">
+    <title>prak3</title>
+</head>
+<body>
+    <p>Dark/Light Mode!</p>
+    <button onclick="myFunction()">Change</button>
+    <h1>TUGAS PRAKTIKUM 3</h1>
+    
+    <div id="option luas benua">
+        <label>Pilih benua : </label>
+        <select name="benua" id="benua" onchange="luas_benua()">
+            <option value="1">amerika</option>
+            <option value="2">australia</option>
+            <option value="3">afrika</option>
+            <option value="4">asia</option>
+            <option value="5">eropa</option>
+            <option value="6">antartika</option>
+        </select>
+        <p id="luas_benua"></p>
+    </div>
+
+    <div id="perhitunga faktorial">
+        <label for="faktorial">Menghitung Faktorial :</label>
+        <form>
+            <input type="number" name="" id="input">
+            <button id="tombola">input angka</button>
+            <p id="keluaran"></p>
+        </form>
+
+        
+    </div>
+</body>
+
+<script>
+ /* dark/light */
+ function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+/* option luas benua */
+function luas_benua(){
+            var a=document.getElementById("benua");
+            if(a.value=="1"){
+                var aa=document.getElementById("luas_benua");
+                aa.innerText = "sekitar 46 juta kilometer persegi.";
+                
+            }else if(a.value=="2"){
+                var aa=document.getElementById("luas_benua");
+                aa.innerText = "sekitar 8 juta kilometer persegi.";
+                
+            }else if(a.value=="3"){
+                var aa=document.getElementById("luas_benua");
+                aa.innerText = "sekitar 33 juta kilometer persegi.";
+                
+            }else if(a.value=="4"){
+                var aa=document.getElementById("luas_benua");
+                aa.innerText = "sekitar 47 juta kilometer persegi.";
+                
+            }else if(a.value=="5"){
+                var aa=document.getElementById("luas_benua");
+                aa.innerText = "sekitar 10 juta kilometer persegi.";
+            }else if(a.value=="6"){
+                var aa=document.getElementById("luas_benua");
+                aa.innerText = "sekitar 889 ribu kilometer persegi."
+            }
+        } 
+/* option perhitungan faktorial */
+        var input = document.getElementById("input")
+        var button = document.getElementById("tombola")
+        var out = document.getElementById("keluaran")
+
+        button.addEventListener("click", function(num){
+            num.preventDefault(); 
+            var num_input = input.value;
+            var faktorial = 1;
+            for(var i=num_input; i>0; i--){
+                faktorial *= i;
+            }
+            out.innerHTML = `Hasil Faktorialnya: ${faktorial}`;
+        })   
+</script>
+</html>
